@@ -4,120 +4,90 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vietnamresa 2023-2024</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 20px;
-            background-color: #f5f5f5;
-        }
-        
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            background-color: white;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-        }
-
-        h1, h2, h3 {
-            color: #2c3e50;
-        }
-
-        h1 {
-            text-align: center;
-            border-bottom: 2px solid #3498db;
-            padding-bottom: 10px;
-        }
-
-        .location-section {
-            margin-bottom: 30px;
-            padding: 15px;
-            border: 1px solid #e0e0e0;
-            border-radius: 5px;
-        }
-
-        .activity {
-            margin: 10px 0;
-            padding: 10px;
-            background-color: #f8f9fa;
-            border-left: 3px solid #3498db;
-        }
-
-        .price {
-            color: #27ae60;
-            font-weight: bold;
-        }
-
-        .tips {
-            background-color: #fff3cd;
-            padding: 15px;
-            border-radius: 5px;
-            margin: 20px 0;
-        }
-    </style>
+    <link rel="stylesheet" href="styles/main.css">
 </head>
 <body>
+    <nav class="nav-container">
+        <div class="nav-links">
+            <a href="index.html">Hem</a>
+            <a href="pages/shopping.html">Shopping</a>
+            <a href="pages/emergency.html">Nödkontakter</a>
+            <a href="pages/transport.html">Transport</a>
+        </div>
+    </nav>
+
     <div class="container">
         <h1>Familjens Vietnamresa</h1>
         <p class="dates">20 december 2023 - 8 januari 2024</p>
 
-        <div class="location-section">
-            <h2>Hanoi (20-24 december)</h2>
-            <div class="activity">
-                <h3>Thang Long Water Puppet Theatre</h3>
-                <p>Adress: 57B Dinh Tien Hoang St, Hoan Kiem</p>
-                <p>Tid: 15:30, 16:40, 18:00 daily</p>
-                <p class="price">Pris: 100.000 VND (~38 SEK)</p>
+        <div class="activity-grid">
+            <!-- Hanoi Section -->
+            <div class="location-card">
+                <h2>Hanoi (20-24 december)</h2>
+                <div class="location-content">
+                    <div class="activity-card">
+                        <h3>Thang Long Water Puppet Theatre</h3>
+                        <p>Adress: 57B Dinh Tien Hoang St, Hoan Kiem</p>
+                        <p>Tid: 15:30, 16:40, 18:00 daily</p>
+                        <span class="price-tag">100.000 VND (~38 SEK)</span>
+                    </div>
+
+                    <div class="activity-card">
+                        <h3>Vietnamese Women's Museum</h3>
+                        <p>Adress: 36 Ly Thuong Kiet St</p>
+                        <p>Tid: 8:00-17:00</p>
+                        <span class="price-tag">30.000 VND (~11 SEK)</span>
+                    </div>
+                </div>
             </div>
-            <div class="activity">
-                <h3>Vietnamese Women's Museum</h3>
-                <p>Adress: 36 Ly Thuong Kiet St</p>
-                <p>Tid: 8:00-17:00</p>
-                <p class="price">Pris: 30.000 VND (~11 SEK)</p>
+
+            <!-- Ninh Binh Section -->
+            <div class="location-card">
+                <h2>Ninh Binh (25-27 december)</h2>
+                <div class="location-content">
+                    <div class="activity-card">
+                        <h3>Trang An Boat Tour</h3>
+                        <p>UNESCO världsarv</p>
+                        <p>Tid: 7:00-16:00</p>
+                        <span class="price-tag">200.000 VND (~75 SEK)</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Hoi An Section -->
+            <div class="location-card">
+                <h2>Hoi An (28 dec - 3 jan)</h2>
+                <div class="location-content">
+                    <div class="activity-card">
+                        <h3>Ancient Town Walking Tour</h3>
+                        <p>Start: Japanese Bridge</p>
+                        <p>Tid: 8:00-11:00</p>
+                        <span class="price-tag">120.000 VND (~45 SEK)</span>
+                    </div>
+                </div>
             </div>
         </div>
 
-        <div class="location-section">
-            <h2>Ninh Binh (25-27 december)</h2>
-            <div class="activity">
-                <h3>Trang An Boat Tour</h3>
-                <p>UNESCO världsarv</p>
-                <p>Tid: 7:00-16:00</p>
-                <p class="price">Pris: 200.000 VND (~75 SEK)</p>
+        <div class="location-card">
+            <h2>Väderinfo</h2>
+            <div class="location-content">
+                <div class="weather-grid">
+                    <div>
+                        <h3>Hanoi</h3>
+                        <p>December: 15-22°C, torrt</p>
+                        <p>Januari: 15-20°C, torrt</p>
+                    </div>
+                    <div>
+                        <h3>Ninh Binh</h3>
+                        <p>December: 15-23°C, torrt</p>
+                    </div>
+                    <div>
+                        <h3>Hoi An</h3>
+                        <p>December: 22-28°C, möjligt regn</p>
+                        <p>Januari: 20-25°C, torrt</p>
+                    </div>
+                </div>
             </div>
-        </div>
-
-        <div class="location-section">
-            <h2>Hoi An (28 december - 3 januari)</h2>
-            <div class="activity">
-                <h3>Ancient Town Walking Tour</h3>
-                <p>Start: Japanese Bridge</p>
-                <p>Tid: 8:00-11:00</p>
-                <p class="price">Pris: 120.000 VND (~45 SEK)</p>
-            </div>
-        </div>
-
-        <div class="location-section">
-            <h2>Hanoi Shopping (3-8 januari)</h2>
-            <div class="activity">
-                <h3>Dong Xuan Market</h3>
-                <p>Adress: Dong Xuan Street, Old Quarter</p>
-                <p>Tid: 6:00-19:00</p>
-                <p>Perfekt för: Kläder, tyger, souvenirer</p>
-            </div>
-        </div>
-
-        <div class="tips">
-            <h3>Viktiga Tips</h3>
-            <ul>
-                <li>Ha alltid kontanter tillgängliga</li>
-                <li>Drick endast flaskvatten</li>
-                <li>Använd Grab-appen för transport</li>
-                <li>Ta med adapter för eluttag (230V, typ A/C)</li>
-            </ul>
         </div>
     </div>
 </body>
