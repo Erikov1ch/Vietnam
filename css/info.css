@@ -1,0 +1,68 @@
+/* Weather section styles */
+.weather-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.weather-card {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.weather-details p {
+    margin: 10px 0;
+    color: #333;
+}
+
+.weather-tips {
+    margin: 10px 0;
+    padding-left: 20px;
+    color: #666;
+}
+
+/* Emergency section styles */
+.emergency-section {
+    margin-top: 40px;
+}
+
+.emergency-card {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 20px 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.emergency-card h3 {
+    color: #e74c3c;
+    border-bottom: 2px solid #e74c3c;
+    padding-bottom: 10px;
+    margin-top: 0;
+}
+
+.hospital {
+    margin: 20px 0;
+    padding-left: 15px;
+    border-left: 3px solid #3498db;
+}
+
+.hospital h4 {
+    margin: 0;
+    color: #2c3e50;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .weather-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .emergency-card {
+        margin: 10px 0;
+        padding: 15px;
+    }
+}
